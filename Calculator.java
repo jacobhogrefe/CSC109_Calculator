@@ -27,5 +27,6 @@ public class Calculator {
         }else {
             System.out.println("Unknown function!");
         }
+        input.close();
     }
 }
