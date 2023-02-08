@@ -6,7 +6,7 @@ public class Calculator {
         System.out.println("Enter 2 whole numbers separated by a space");
         String[] numbers = input.nextLine().split(" ");
         int[] answer = new int[]{Integer.parseInt(numbers[0]),Integer.parseInt(numbers[1])};
-        System.out.println("Would you like to add or subtract each number?");
+        System.out.println("Would you like to add, subtract, multiply, or divide each number?");
         String function = input.nextLine();
         if (function.equalsIgnoreCase("add")) {
             int printAnswer = answer[0] + answer[1];
@@ -14,7 +14,13 @@ public class Calculator {
         } else if (function.equalsIgnoreCase("subtract")) {
             int printAnswer = answer[0] - answer[1];
             System.out.println("The answer is " + printAnswer);
-        } else {
+        } else if (function.equalsIgnoreCase("multiply")) {
+            int printAnswer = answer[0] * answer[1];
+            System.out.println("The answer is " + printAnswer);
+        } else if (function.equalsIgnoreCase("divide")) {
+            int printAnswer = answer[0] / answer[1];
+            System.out.println("The answer is " + printAnswer);
+        }else {
             System.out.println("Unknown function!");
         }
     }
