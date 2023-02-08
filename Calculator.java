@@ -18,8 +18,12 @@ public class Calculator {
             float printAnswer = answer[0] * answer[1];
             System.out.println("The answer is " + printAnswer);
         } else if (function.equalsIgnoreCase("divide")) {
-            float printAnswer = answer[0] / answer[1];
-            System.out.println("The answer is " + printAnswer);
+            if (answer[1] != 0) {
+                float printAnswer = answer[0] / answer[1];
+                System.out.println("The answer is " + printAnswer);
+            } else {
+                System.out.println("Cannot divide by 0!");
+            }
         }else {
             System.out.println("Unknown function!");
         }
