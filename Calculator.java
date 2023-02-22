@@ -28,5 +28,8 @@ public class Calculator {
             System.out.println("Unknown function!");
         }
         input.close();
+
+        System.out.println("No derivatives for u!!!!");
+        System.out.println("Derivatives coming never");
     }
 }
